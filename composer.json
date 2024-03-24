@@ -1,0 +1,22 @@
+{
+    "name": "potter/link-provider-interface",
+    "description": "PHP Link Provider Interface",
+    "type": "library",
+    "require": {
+        "php": "^8.3",
+        "psr/link": "^2.0@dev"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Potter\\Link\\Provider\\": "src/Potter/Link/Provider/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jay Potter",
+            "email": "j@ypotter.ca"
+        }
+    ],
+    "minimum-stability": "dev"
+}
