@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Potter\Link\Provider;
 
-use \Psr\Link\LinkProviderInterface as PsrLinkProviderInterface, \Traversable;
+use \Psr\Link\{
+    LinkInterface,
+    LinkProviderInterface as PsrLinkProviderInterface
+};
+use \Traversable;
 
 interface LinkProviderInterface extends PsrLinkProviderInterface
 {
     public function getLinks(): array|Traversable;
     public function getLinksByRel(string $rel): array|Traversable;
+    public function hasLink(LinkInterface $link): bool;
 }
